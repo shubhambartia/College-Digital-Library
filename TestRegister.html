@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="https://amci.net.in/assetsamci/images/logoo.png">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  padding: 5px 10px;
+  border: 1px solid #e2e0e0;
+}
+.topName{
+position: relative;
+left:8%;   
+color:#8e8b8b; 
+}
+.header-right{
+float: right;    
+position: relative;
+right:25%;
+}
+.main{
+position: relative;
+left:7% ;
+padding: 10px;   
+width:80%;
+text-decoration:none;
+}
+.main-right {
+float:right;
+line-height: 1.9;
+word-spacing: 30px;
+color:black;
+text-decoration:none;
+}
+
+.Format{
+position: relative;
+left:25%;
+width:40%;
+border: #8e8b8b;
+}
+
+.name input{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #a4a8ad;
+  position: relative;
+  left: 5%;
+}
+
+.header2{
+  width: 100%;
+  max-height:60px;
+height: 30%;
+    margin: 50px auto 0px;
+    color: white;
+    background:#0e51a5;
+    text-align: left;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+}
+
+.name-right{
+  position: relative;
+  right:5%;
+  width:30%;
+  float: right;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+  <a class="topName"><b>AMCI</b></a>
+  <div class="header-right">
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt="Indian Flag" width="30">
+</div>
+</div>
+<div class="main">
+    <img src="https://amci.net.in/assetsamci/images/logoo.png" alt="AMCI logoo" width="8%">
+  <div class="main-right">
+      <a href="#home">Home</a>
+      <a href="#contact">Courses</a>
+      <a href="#about">Faculty</a>
+      <a href="#about">OnlineClasses</a>
+      <a href="#about">Library</a>
+      <a href="#about">Contact</a>
+   </div>    
+</div>
+<br>
+<div class="Format">
+  <div class="header2">
+  	<h2>Register</h2>
+  </div>
+<br>
+  <div class="name">
+     <input type="text" name="firstName" placeholder="First Name">
+     <div class="name-right">
+     <input type="text" name="lastName" placeholder="Last Name">
+    </div>
+  </div>
+  <br>
+  <div class="name"><br>
+      &#8195;Date of Birth<br>
+       &#8195;<select>
+     <option value="01">01</option>
+     <option value="02">02</option>
+     <option value="03">03</option>
+     <option value="04">04</option>
+     <option value="05">05</option>
+     <option value="06">06</option>
+     <option value="07">07</option>
+     <option value="08">08</option>
+     <option value="09">09</option>
+     <option value="10">10</option>
+     <option value="11">11</option>
+     <option value="12">12</option>
+     <option value="13">13</option>
+     <option value="14">14</option>
+     <option value="15">15</option>
+     <option value="16">16</option>
+     <option value="17">17</option>
+     <option value="18">18</option>
+     <option value="19">19</option>
+     <option value="20">20</option>
+     <option value="21">21</option>
+     <option value="22">22</option>
+     <option value="23">23</option>
+     <option value="24">24</option>
+     <option value="25">25</option>
+     <option value="26">26</option>
+     <option value="27">27</option>
+     <option value="28">28</option>
+     <option value="29">29</option>
+     <option value="30">30</option>
+     <option value="31">31</option>
+      </select>
+      <select>
+ <option value="Jan">Jan</option>   
+ <option value="feb">Feb</option>
+ <option value="mar">Mar</option>
+ <option value="apr">Apr</option>
+ <option value="may">May</option>
+ <option value="june">Jun</option>
+ <option value="july">Jul</option>
+ <option value="aug">Aug</option>
+ <option value="sep">Sep</option>
+ <option value="oct">Oct</option>
+ <option value="nov">Nov</option>
+ <option value="dec">Dec</option>
+      </select>
+      <select id="selectElementId"></select>
+
+      <script>
+          var min = 1990,
+          max = 2080,
+          select = document.getElementById('selectElementId');
+      
+          for (var i = min; i<=max; i++){
+             var opt = document.createElement('option');
+             opt.value = i;
+             opt.innerHTML = i;
+             select.appendChild(opt);
+          }
+      </script>    
+  </div>
+  <div class="name-right">
+    <input type="text" name="email" placeholder="Email ID"> 
+  </div>
+ </div>
+
+
+</body>
+</html>
